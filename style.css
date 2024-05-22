@@ -1,0 +1,50 @@
+/* Mylonas Athanasios e21118 */
+/* Set the font family for the entire body */
+body {
+    font-family: sans-serif;
+}
+
+/* Style for the form element */
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+/* Style for the label elements */
+label {
+    margin-bottom: 5px;
+}
+
+/* Style for the input elements */
+input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* Style for the button element */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for the results container */
+#results {
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Style for the paragraphs inside the results container */
+#results p {
+    margin-bottom: 5px;
+}
+
+/* Style for the span elements inside the results container */
+#results span {
+    font-weight: bold;
+}

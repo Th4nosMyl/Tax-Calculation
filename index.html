@@ -1,0 +1,50 @@
+<!--Mylonas Athanasios e21118-->
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <!-- This is the head section -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Υπολογισμός Καθαρού Εισοδήματος</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- This is the body section -->
+    <h1>Υπολογισμός Καθαρού Εισοδήματος</h1>
+
+    <form id="form">
+        <!-- This is the form section -->
+        <label for="income">Ετήσιο Εισόδημα:</label>
+        <input type="number" id="income" name="income" required>
+
+        <label for="year">Έτος Γέννησης:</label>
+        <input type="number" id="year" name="year" required>
+
+        <label for="month">Μήνας Γέννησης:</label>
+        <input type="number" id="month" name="month" min="1" max="12" required>
+
+        <label for="day">Ημέρα Γέννησης:</label>
+        <input type="number" id="day" name="day" min="1" max="31" required>
+
+        <label for="children">Αριθμός Τέκνων:</label>
+        <input type="number" id="children" name="children" min="0" max="4" required>
+
+        <button type="submit">Υπολογισμός</button>
+    </form>
+
+    <div id="results">
+        <!-- This is the results section -->
+        <h2>Αποτελέσματα</h2>
+        <p>Φορολογητέο Εισόδημα: <span id="taxableIncome"></span></p>
+        <p>Φόρος: <span id="tax"></span></p>
+        <p>%Έκπτωσης Τελική: <span id="finalDiscount"></span></p>
+        <p>Φόρος Τελικός: <span id="finalTax"></span></p>
+        <p>Καθαρό Εισόδημα: <span id="netIncome"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
